@@ -38,9 +38,20 @@ def fizzbuzz(num)
  end
 end
 
-#binding.pry
-
 def calculator(operation, num1, num2)
   # your code here
+ if operation == "+"
+  num1+num2
+ elsif operation == "-"
+  num1-num2
+ elsif operation == "*"
+  num1*num2
+  elsif operation == "/"
+  num1/num2
+  else 
+    puts "Invalid operation!"
+    return nil
+ end
 end
 
+#binding.pry
